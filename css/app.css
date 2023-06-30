@@ -49,10 +49,28 @@ img {
   max-width: 120rem;
 }
 
+/* Utilidades */
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  background-color: #8cbc00;
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding: 1rem;
+  transition: background-color.3s ease-out;
+}
+
+.btn:hover {
+  background-color: #769c02;
+}
+
 /* Header y Navegación */
 .nombre-sitio {
   margin: 5rem;
-  text-align: center;
 }
 
 .nombre-sitio span {
@@ -74,22 +92,19 @@ img {
   height: 55rem;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
 }
 
 /*Categorias*/
 
 .categorias h2 {
-  margin: 3rem;
+  padding: 5rem;
 }
 
 .listado-categorias {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-}
-
-.categorias h2 {
-  text-align: center;
 }
 
 .categoria a {
@@ -103,4 +118,58 @@ img {
   background-color: #037bc0;
   color: #fff;
   border-bottom-right-radius: 10px;
+}
+
+/* Bloque Nosotros */
+.sobre-nosotros {
+  margin-top: 5rem;
+  background-image: linear-gradient(
+      to right,
+      transparent 50%,
+      #037bc0 50%,
+      #037bc0 100%
+    ),
+    url(../img/nosotros.jpg);
+  padding: 10rem 0;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.sobre-nosotros-grid {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.texto-nosotros {
+  flex-basis: 50%;
+  padding-left: 5rem;
+}
+
+/* Listado de Productos */
+.contenido-principal h2 {
+  padding: 5rem;
+}
+
+.listado-productos {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.producto {
+  background-color: #037bc0;
+}
+
+.texto-producto {
+  text-align: center;
+  color: #fff;
+  padding: 2rem;
+}
+
+.texto-producto .precio {
+  font-size: 2.8rem;
+  font-weight: 900;
+}
+
+.texto-producto p {
+  margin: 0 0 0.5rem 0;
 }
